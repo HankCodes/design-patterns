@@ -49,7 +49,7 @@ import logger.driver.database.LogsRepository
  */
 fun main(args: Array<String>) {
 
-    val driver = when(val loggDriverType = args.first()) {
+    val driver = when(val logDriverType = args.first()) {
         "console" -> ConsoleLogDriver()
         "file" -> FileSystemLogDriver("logs.txt")
         "database" -> {
@@ -60,10 +60,14 @@ fun main(args: Array<String>) {
             DatabaseLogDriver(LogsRepository())
         }
         "http" -> HttpLogDriver()
-        else -> throw Exception("Invalid log driver: $loggDriverType")
+        else -> {
+            println("Invalid log driver: $logDriverType, defaults to console")
+            ConsoleLogDriver()
+        }
     }
 
     val logger = LoggerImpl(driver)
+
     logger.info("Hello world")
     logger.warn("Hello world")
     logger.error("Hello world")

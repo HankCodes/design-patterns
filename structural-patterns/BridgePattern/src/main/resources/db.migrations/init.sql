@@ -1,6 +1,0 @@
- CREATE TABLE IF NOT EXISTS
- Logs (
-   id SERIAL PRIMARY KEY,
-   level VARCHAR(50),
-   message VARCHAR(255)
-);
