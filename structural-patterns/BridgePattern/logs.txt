@@ -1,0 +1,9 @@
+[INFO] Hello world
+[WARN] Hello world
+[ERROR] Hello world
+[INFO] Hello world
+[WARN] Hello world
+[ERROR] Hello world
+[INFO] Hello world
+[WARN] Hello world
+[ERROR] Hello world
