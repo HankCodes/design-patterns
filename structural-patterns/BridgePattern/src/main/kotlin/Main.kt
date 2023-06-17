@@ -1,12 +1,17 @@
 import db.Database
+import kotlinx.coroutines.*
+import logger.LogDriverFactory
 import logger.LoggerImpl
 import logger.driver.ConsoleLogDriver
 import logger.driver.database.DatabaseLogDriver
 import logger.driver.FileSystemLogDriver
-import logger.driver.HttpLogDriver
+import logger.driver.http.HttpLogDriver
 import logger.driver.database.LogsRepository
+import okhttp3.OkHttpClient
+import server.startServer
 
 /**
+ * WHAT IS THE BRIDGE PATTERN?
  * Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into
  * two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
  *
@@ -29,16 +34,32 @@ import logger.driver.database.LogsRepository
  */
 
 /**
+ * THIS EXAMPLE
+ *
+ * In this example we have a Logger that can log either to the console, a file, a database or a http endpoint.
+ * One approach to make a Logger that is extensible is to have a Logger interface and let each log type implement this interface.
+ * We would, then, have four different logger classes, one for each type, that extends the Logger interface.
+ *
+ * Another approach is to utilize the Bridge Pattern.
+ * We introduce a LogDriver interface instead. The classes that implements the LogDriver
+ * will take care of the actual implementation of the logging. This will separate the contract from the implementation.
+ * The Logger interface is still implemented by only one class, but this class will take a LogDriver as constructor argument
+ * which will take care of the actual implementation of the logging. The implementation of the Logger interface will simply pass along
+ * the operation to the LogDriver.
+ *
+ */
+
+/**
  * LOGGING LIBRARY
- * (Should it be able to swap logger at runtime? Maybe just load the driver at runtime)
- * Logger interface/abstract class:
- * Logger(logDriver)
+ * The logging library will consist of these entities.
+ *
+ * Logger interface:
  * info(string)
  * warn(string)
  * error(string)
  *
  *  LogDriver interface
- *  log()
+ *  log(level, message)
  *
  *  LogDrivers (implements LogDriver)
  *  FileSystemLogger
@@ -46,29 +67,17 @@ import logger.driver.database.LogsRepository
  *  ConsoleLogger
  *  HttpLogger
  *
+ *  LoggerImpl (implements Logger) will take a LogDriver as constructor argument.
+ *
  */
 fun main(args: Array<String>) {
 
-    val driver = when(val logDriverType = args.first()) {
-        "console" -> ConsoleLogDriver()
-        "file" -> FileSystemLogDriver("logs.txt")
-        "database" -> {
-            Database()
-                .setup()
-                .connect()
-
-            DatabaseLogDriver(LogsRepository())
-        }
-        "http" -> HttpLogDriver()
-        else -> {
-            println("Invalid log driver: $logDriverType, defaults to console")
-            ConsoleLogDriver()
-        }
-    }
-
+    val loggerType = args.first()
+    val driver = LogDriverFactory().createDriver(loggerType)
     val logger = LoggerImpl(driver)
 
-    logger.info("Hello world")
-    logger.warn("Hello world")
-    logger.error("Hello world")
+    val logMessage = "This is the log message"
+    logger.info(logMessage)
+    logger.warn(logMessage)
+    logger.error(logMessage)
 }

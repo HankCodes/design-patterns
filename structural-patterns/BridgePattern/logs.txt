@@ -7,3 +7,6 @@
 [INFO] Hello world
 [WARN] Hello world
 [ERROR] Hello world
+[INFO] This is the log message - Driver type: file
+[WARN] This is the log message - Driver type: file
+[ERROR] This is the log message - Driver type: file

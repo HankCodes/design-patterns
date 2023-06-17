@@ -1,6 +1,6 @@
 package logger
 
-import logger.driver.LogDriver
+import logger.driver.contract.LogDriver
 
 class LoggerImpl(private val driver: LogDriver) : Logger {
     companion object {
@@ -9,21 +9,16 @@ class LoggerImpl(private val driver: LogDriver) : Logger {
         const val LEVEL_ERROR = "ERROR"
     }
     override fun info(message: String) {
-        printDriverType()
-        driver.log(LEVEL_INFO, message)
+        driver.log(LEVEL_INFO, printWithDriverType(message))
     }
 
     override fun warn(message: String) {
-        printDriverType()
-        driver.log(LEVEL_WARN, message)
+        driver.log(LEVEL_WARN, printWithDriverType(message))
     }
 
     override fun error(message: String) {
-        printDriverType()
-        driver.log(LEVEL_ERROR, message)
+        driver.log(LEVEL_ERROR, printWithDriverType(message))
     }
 
-    private fun printDriverType() {
-        println("Driver type: ${driver.driverType()}")
-    }
+    private fun printWithDriverType(message: String): String = "$message - Driver type: ${driver.driverType()}"
 }

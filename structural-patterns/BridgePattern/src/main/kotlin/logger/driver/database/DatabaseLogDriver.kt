@@ -1,6 +1,6 @@
 package logger.driver.database
 
-import logger.driver.LogDriver
+import logger.driver.contract.LogDriver
 
 class DatabaseLogDriver(private val repository: LogsRepository) : LogDriver {
     override fun driverType(): String = "database"

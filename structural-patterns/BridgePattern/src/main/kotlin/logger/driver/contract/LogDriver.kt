@@ -1,4 +1,4 @@
-package logger.driver
+package logger.driver.contract
 
 interface LogDriver {
     fun driverType(): String
