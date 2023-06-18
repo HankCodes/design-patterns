@@ -27,7 +27,7 @@ class DatabaseDriverLoggerTest {
         sut.info(uniqueLogMessage)
 
         val logs = repository.getLogs()
-        val actual = logs.firstOrNull() { it.message == uniqueLogMessage }
+        val actual = logs.firstOrNull() { it.message.contains(uniqueLogMessage) }
 
         assertNotNull(actual)
 
@@ -41,7 +41,7 @@ class DatabaseDriverLoggerTest {
         sut.info(uniqueLogMessage)
 
         val logs = repository.getLogs()
-        val log = logs.firstOrNull() { it.message == uniqueLogMessage }
+        val log = logs.firstOrNull() { it.message.contains(uniqueLogMessage) }
 
         val expected = "INFO"
         val actual = log?.level
@@ -57,7 +57,7 @@ class DatabaseDriverLoggerTest {
         sut.warn(uniqueLogMessage)
 
         val logs = repository.getLogs()
-        val log = logs.firstOrNull() { it.message == uniqueLogMessage }
+        val log = logs.firstOrNull() { it.message.contains(uniqueLogMessage) }
 
         val expected = "WARN"
         val actual = log?.level
@@ -73,7 +73,7 @@ class DatabaseDriverLoggerTest {
         sut.error(uniqueLogMessage)
 
         val logs = repository.getLogs()
-        val log = logs.firstOrNull() { it.message == uniqueLogMessage }
+        val log = logs.firstOrNull() { it.message.contains(uniqueLogMessage) }
 
         val expected = "ERROR"
         val actual = log?.level

@@ -72,8 +72,17 @@ import server.startServer
  */
 fun main(args: Array<String>) {
 
+    // We take the log type from command line argument
+    // Supported arguments: console, file, database, http
+    // To run the application, run the following command: ./gradlew run --args="<logging type>"
     val loggerType = args.first()
+
+    // The LogDriverFactory will create the correct LogDriver, the LogDriver is a crucial part of the Bridge Pattern,
+    // the factory is for convenience only. LogDriver interface only consist of one method: log(level, message)
     val driver = LogDriverFactory().createDriver(loggerType)
+
+    // The LoggerImpl() is the ony implementation on the Logger interface we need since we have the LogDriver.
+    // Not using the Bridge Pattern would mean that we would have to implement the Logger interface for each logging type.
     val logger = LoggerImpl(driver)
 
     val logMessage = "This is the log message"

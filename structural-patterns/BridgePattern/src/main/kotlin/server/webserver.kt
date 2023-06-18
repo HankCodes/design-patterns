@@ -11,23 +11,18 @@ import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.request.*
 
 fun startServer() = embeddedServer(Netty, 8080) {
-        println("server running on 8080")
+        println("[WebServer]: Server running on 8080")
 
         install(ContentNegotiation) {
             json()
         }
 
         routing {
-            get("/") {
-                call.respondText("Hello, world!", ContentType.Text.Html)
-            }
-
             post("/logs") {
                 try {
-                    println("Received POST req")
                     val logMessage = call.receive<LogMessage>()
 
-                    println("Received log: ${logMessage.level} - ${logMessage.message}")
+                    println("[WebServer]: Received log. Level: ${logMessage.level}, message: \"${logMessage.message}\"")
                     call.respond(HttpStatusCode.OK)
 
                 } catch (e: Exception) {

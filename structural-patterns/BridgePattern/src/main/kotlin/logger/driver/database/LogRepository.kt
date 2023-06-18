@@ -1,6 +1,5 @@
 package logger.driver.database
 
-import Logs
 import LogsDAO
 import org.jetbrains.exposed.sql.transactions.transaction
 
@@ -11,8 +10,6 @@ class LogsRepository {
                 this.level = level
                 this.message = message
             }
-
-            println("New log entry created with ID: ${newLog.id.value}")
 
             newLog.id.value
         }
