@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e0a0690a-809b-4515-97bb-b58cb2b6f33c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/design-patterns.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/composite/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/src/main/kotlin/permissions/Permission.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/composite/permissions/Permission.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/src/main/kotlin/permissions/PermissionBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/composite/permissions/PermissionBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/src/main/kotlin/permissions/PermissionLeaf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/composite/permissions/PermissionLeaf.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/src/main/kotlin/permissions/RoleComposite.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/composite/permissions/RoleComposite.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/CompositePattern/src/main/kotlin/permissions/contracts/Component.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/composite/permissions/contracts/Component.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/FactoryPatterns.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/META-INF/FactoryPatterns.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/MainKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/factories/AWSNotificationServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/factories/AzureNotificationServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/factories/INotificationServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/factories/INotificationServiceFactoryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/factories/NotificationServiceFactoryFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/services/INotificationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/services/aws/AwsEmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/services/aws/AwsMessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/services/aws/AwsSmsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/services/azure/AzureEmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/services/azure/AzureMessageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/out/production/FactoryPatterns/services/azure/AzureSmsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/factories/AWSNotificationServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/factories/AWSNotificationServiceFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/factories/AzureNotificationServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/factories/AzureNotificationServiceFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/factories/NotificationServiceFactoryFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/factories/NotificationServiceFactoryFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/factories/contracts/INotificationServiceFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/factories/contracts/INotificationServiceFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/factories/contracts/INotificationServiceFactoryFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/factories/contracts/INotificationServiceFactoryFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/services/aws/AwsEmailService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/services/aws/AwsEmailService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/services/aws/AwsMessageService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/services/aws/AwsMessageService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/services/aws/AwsSmsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/services/aws/AwsSmsService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/services/azure/AzureEmailService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/services/azure/AzureEmailService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/services/azure/AzureMessageService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/services/azure/AzureMessageService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/services/azure/AzureSmsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/services/azure/AzureSmsService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/FactoryPatterns/src/main/kotlin/services/contracts/INotificationService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/builder/factory/services/contracts/INotificationService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/.idea/prototypePattern.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builder-patterns/prototypePattern/PrototypePattern/src/main/kotlin/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/logs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/db/Database.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/db/Database.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/db/DbConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/db/DbConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/db/DbContainer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/db/DbContainer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/LogDriverFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/LogDriverFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/Logger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/Logger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/LoggerImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/LoggerImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/driver/ConsoleLogDriver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/driver/ConsoleLogDriver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/driver/FileSystemLogDriver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/driver/FileSystemLogDriver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/driver/contract/LogDriver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/driver/contract/LogDriver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/driver/database/DatabaseLogDriver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/driver/database/DatabaseLogDriver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/driver/database/DbConnect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/driver/database/DbConnect.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/driver/database/LogRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/driver/database/LogRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/driver/database/Logs.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/driver/database/Logs.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/driver/http/HttpLogDriver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/driver/http/HttpLogDriver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/logger/driver/http/utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/logger/driver/http/utils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/server/LogMessage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/server/LogMessage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/main/kotlin/server/webserver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/structural/bridge/server/webserver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/test/kotlin/DatabaseDriverLoggerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/structural/bridge/DatabaseDriverLoggerTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structural-patterns/BridgePattern/src/test/kotlin/FileSystemDriverLoggerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/structural/bridge/FileSystemDriverLoggerTest.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/test">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="design-patterns" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="design-patterns" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="design-patterns" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="design-patterns" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RHvGeEb6x5Nh9AWH8edBBNdE6p" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-11",
+    "last_opened_file_path": "/Users/henrikholstad/development/private/design-patterns/src/main/kotlin/builder/prototype",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/builder/prototype" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/builder/factory" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/builder/composite" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/kotlin" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="structural.bridge" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.Bridge Pattern">
+    <configuration name="Tests in 'designpatterns.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="design-patterns [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="design-patterns [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="builder.factory.MainKt" />
+      <module name="designpatterns.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.design-patterns [clean]" />
+      <item itemvalue="Gradle.Tests in 'designpatterns.test'" />
+      <item itemvalue="Gradle.design-patterns [build]" />
+      <item itemvalue="Kotlin.Bridge Pattern" />
+      <item itemvalue="Kotlin.Factory Pattern" />
+      <item itemvalue="Kotlin.Composite Pattern" />
+      <item itemvalue="Kotlin.MainKt (2)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.Composite Pattern" />
+        <item itemvalue="Kotlin.Factory Pattern" />
+        <item itemvalue="Kotlin.Bridge Pattern" />
+        <item itemvalue="Gradle.Tests in 'designpatterns.test'" />
+        <item itemvalue="Gradle.design-patterns [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0a0690a-809b-4515-97bb-b58cb2b6f33c" name="Changes" comment="" />
+      <created>1686919726690</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686919726690</updated>
+    </task>
+    <servers />
+  </component>
+</project>
