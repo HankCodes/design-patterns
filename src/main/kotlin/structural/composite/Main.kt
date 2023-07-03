@@ -1,6 +1,6 @@
-package builder.composite
+package structural.composite
 
-import builder.composite.permissions.*
+import structural.composite.permissions.*
 
 
 fun createFilePermissions(): List<Permission> {

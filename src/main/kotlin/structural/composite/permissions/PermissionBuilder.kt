@@ -1,4 +1,4 @@
-package builder.composite.permissions
+package structural.composite.permissions
 
 class PermissionBuilder {
     private var entities: List<Entity>? = null

@@ -1,4 +1,4 @@
-package builder.composite.permissions.contracts
+package structural.composite.permissions.contracts
 
 interface Component {
     val delimiter: String

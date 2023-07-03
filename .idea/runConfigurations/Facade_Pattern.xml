@@ -1,8 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Bridge Pattern" type="JetRunConfigurationType">
-    <option name="MAIN_CLASS_NAME" value="structural.bridge.MainKt" />
+  <configuration default="false" name="Facade Pattern" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="structural.facade.MainKt" />
     <module name="design-patterns.main" />
-    <option name="PROGRAM_PARAMETERS" value="http" />
     <shortenClasspath name="NONE" />
     <method v="2">
       <option name="Make" enabled="true" />

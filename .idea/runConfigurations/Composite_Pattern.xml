@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Composite Pattern" type="JetRunConfigurationType">
-    <option name="MAIN_CLASS_NAME" value="builder.composite.MainKt" />
+    <option name="MAIN_CLASS_NAME" value="structural.composite.MainKt" />
     <module name="design-patterns.main" />
     <shortenClasspath name="NONE" />
     <method v="2">

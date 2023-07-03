@@ -1,6 +1,6 @@
-package builder.composite.permissions
+package structural.composite.permissions
 
-import builder.composite.permissions.contracts.Component
+import structural.composite.permissions.contracts.Component
 
 
 class RoleComposite(private val name: String) : Component {
